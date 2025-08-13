@@ -38,13 +38,13 @@ public class Executor {
             System.out.println("Enter the command  for robot without any space: ");
 
             //initialise command on robot
-            String commands = scanner.nextLine().strip();
+            String commands = scanner.nextLine().trim();
             helper.executeCommandOnRobot(commands, robot);
             System.out.println("Output-->Current Position: (" + robot.getxAxis() + ", " + robot.getyAxis() + ", " +
                     robot.getDirection().value + ")" + (robot.isLost() ? " - Lost" : ""));
 
             System.out.println("Do you want to continue? (YES/NO)");
-            continueExecutionUserInput = scanner.nextLine().strip();
+            continueExecutionUserInput = scanner.nextLine().trim();
         }while (continueExecutionUserInput.equalsIgnoreCase("YES"));
         System.out.print("Programme ended!!");
     }

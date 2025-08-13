@@ -60,7 +60,7 @@ public class Helper {
                 throw new IllegalArgumentException("Commands length cannot be more than 100 characters.");
             }
 
-            for (char commandCharacter : commands.toUpperCase().strip().toCharArray()) {
+            for (char commandCharacter : commands.toUpperCase().toCharArray()) {
                 robot.setDirectionUsingOrientation(Orientations.valueOf(String.valueOf(commandCharacter)));
 //            System.out.print(index + commandCharacter + "\n" + robot.getDirection() + "\n");
                 if (robot.isLost()) break;
