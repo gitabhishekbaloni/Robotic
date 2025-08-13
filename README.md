@@ -37,4 +37,4 @@ Follow the prompts in the console to:
 - Set boundaries (e.g., `50 50`)
 - Initialize robot (e.g., `10 20 N`)
 - Enter commands (e.g., `RFFL`)
-- Continue or exit
+- Continue or exit ( Yes or No)
