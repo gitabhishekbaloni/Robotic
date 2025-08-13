@@ -40,7 +40,7 @@ public class Executor {
             //initialise command on robot
             String commands = scanner.nextLine().strip();
             helper.executeCommandOnRobot(commands, robot);
-            System.out.println("Current Position: (" + robot.getxAxis() + ", " + robot.getyAxis() + ", " +
+            System.out.println("Output-->Current Position: (" + robot.getxAxis() + ", " + robot.getyAxis() + ", " +
                     robot.getDirection().value + ")" + (robot.isLost() ? " - Lost" : ""));
 
             System.out.println("Do you want to continue? (YES/NO)");
